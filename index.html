@@ -26,6 +26,7 @@
      <p id="variante">0</p>
      <button onclick="aumentar()">aumentar</button>
      <button onclick="diminuir()">diminuir</button>
+     <button onclick="crash()">Oops! não clica pfv.</button>
    </section>
    <!--logica-->
    <script>
@@ -33,12 +34,10 @@
     let numero = 0
 
     function aumentar() {
-        console.log("fudeu+")
         numero = numero + 1;
         contador()
     }
     function diminuir() {
-        console.log("fudeu-")
         numero = numero - 1;
         contador()
 
@@ -47,6 +46,18 @@
         const p = document.querySelector("#variante")
         p.innerText = numero
         console.log(numero)
+    }
+    function usedforcrash(){
+        console.log("Crashing...")
+        console.log("Crashing...")
+        console.log("Crashing...")
+        console.log("Crashing...")
+        console.log("Crashing...")
+    }
+    function crash(){
+        while (true){
+            usedforcrash()
+        }
     }
    </script>
     
